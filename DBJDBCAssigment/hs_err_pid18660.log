@@ -1,0 +1,113 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 368656 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:323), pid=18660, tid=16524
+#
+# JRE version:  (7.0_80-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.80-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002270800):  JavaThread "Unknown thread" [_thread_in_vm, id=16524, stack(0x00000000020d0000,0x00000000021d0000)]
+
+Stack: [0x00000000020d0000,0x00000000021d0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002270800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=16524, stack(0x00000000020d0000,0x00000000021d0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff712b20000 - 0x00007ff712b53000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ffc36ef0000 - 0x00007ffc370cb000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc188c0000 - 0x00007ffc188f3000 	C:\Program Files (x86)\AVG\Antivirus\x64\aswhooka.dll
+0x00007ffc36530000 - 0x00007ffc365de000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc33770000 - 0x00007ffc339b9000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc36d70000 - 0x00007ffc36e11000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc34450000 - 0x00007ffc344ed000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc345a0000 - 0x00007ffc345f9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc361f0000 - 0x00007ffc36315000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc36740000 - 0x00007ffc3688a000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc34370000 - 0x00007ffc3438e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc36b70000 - 0x00007ffc36b97000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc335e0000 - 0x00007ffc33767000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc33a70000 - 0x00007ffc33b0a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc34270000 - 0x00007ffc34366000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc1c480000 - 0x00007ffc1c6e7000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.15063.483_none_26002d27e7c744a2\COMCTL32.dll
+0x00007ffc35ee0000 - 0x00007ffc361d9000 	C:\WINDOWS\System32\combase.dll
+0x00007ffc34390000 - 0x00007ffc343fa000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc36b40000 - 0x00007ffc36b6d000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000077bc0000 - 0x0000000077c92000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x00000000773e0000 - 0x0000000077bb9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ffc36730000 - 0x00007ffc36738000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffc30730000 - 0x00007ffc30739000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc36e80000 - 0x00007ffc36eec000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc309e0000 - 0x00007ffc30a03000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc30790000 - 0x00007ffc307bb000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffc34400000 - 0x00007ffc34449000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00000000500b0000 - 0x00000000500bf000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000050040000 - 0x0000000050068000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000050020000 - 0x0000000050036000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: MainClass
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jre1.8.0_144\bin;C:\Users\marta\AppData\Local\Microsoft\WindowsApps;
+USERNAME=marta
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8266004k(2390220k free), swap 33431828k(5292k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.80-b11) for windows-amd64 JRE (1.7.0_80-b15), built on Apr 10 2015 11:26:34 by "java_re" with unknown MS VC++:1600
+
+time: Sun Nov 19 13:03:19 2017
+elapsed time: 0 seconds
+
